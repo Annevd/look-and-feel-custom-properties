@@ -25,9 +25,9 @@ form.search {
     display: flex;
     align-items: center;
     margin-bottom: 2.5rem;
+    max-width: 15rem;
     padding: var(--padding-01);
     border-radius: var(--border-radius);
-    max-width: 15rem;
     background: white;
 }
 
@@ -37,7 +37,6 @@ form.search i {
 }
 
 .search input {
-
     font-size: var(--font-size-standard);
     font-family: AvenirMedium, Arial;
     outline: none;
