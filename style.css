@@ -1,0 +1,90 @@
+/* Custom properties */
+
+:root {
+    /* Technisch */
+    --padding-01: 0.5rem 0.75rem;
+    --margin-label: 1rem;
+    --border-radius: 0.75rem;
+
+    /* Kleur */
+    --body-color: #e4e9f7;
+    --text-color:  #3a3b3c;
+
+    /* Font */
+    --font-size-standard: 1rem;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+/* Zoekbalk */
+
+form.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding: var(--padding-01);
+    border-radius: var(--border-radius);
+    max-width: 15rem;
+    background: white;
+}
+
+form.search i {
+    margin-right: var(--margin-label);
+    font-size: 1.25rem;
+}
+
+.search input {
+
+    font-size: var(--font-size-standard);
+    font-family: AvenirMedium, Arial;
+    outline: none;
+    border: none;
+}
+
+/* Text input */
+
+form.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+form.input input {
+    padding: var(--padding-01);
+    border-radius: var(--border-radius);
+    border: none;
+    outline: 0;
+    font-family: AvenirMedium, Arial;
+    font-size: var(--font-size-standard);
+}
+
+form.input label {
+    margin-right: var(--margin-label);
+    font-family:  Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Button */
+
+button {
+    padding: var(--padding-01);
+    border: none;
+    border-radius: var(--border-radius);
+    background: white;
+    font-family: AvenirMedium, Arial;
+    font-size: var(--font-size-standard);
+    color: var(--text-color);
+    box-shadow: 3px 3px 2px rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+/* Als de gebruiker dark mode gebruikt: */
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+      --body-color: #18191a;
+      --text-color: #ccc;
+    }
+  }
